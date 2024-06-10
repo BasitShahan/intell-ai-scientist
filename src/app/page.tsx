@@ -5,7 +5,6 @@ import Curriculum from "@/components/Curriculum";
 import Courses from "@/components/Courses";
 import Offer from "@/components/Offer";
 
-import Section1 from "@/components/Section1";
 import Section3 from "@/components/Section3";
 import Section4 from "@/components/Section4";
 import Section5 from "@/components/Section5";
