@@ -84,12 +84,7 @@ const HeaderMain = () => {
           </li>
           </Link>
           
-          <li
-            className="transition-all duration-200 border-b-2 
-     border-transparent hover:border-b-2 hover:border-green-600 cursor-pointer"
-          >
-            Results
-          </li>
+          
           <Link href='/download'>
           <li
             className="transition-all duration-200 border-b-2 

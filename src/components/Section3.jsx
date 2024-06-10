@@ -13,9 +13,8 @@ export default function Section3() {
           <div className='mt-5 mx-5'>
             <h1 className='text-center font-title text-4xl font-bold bg-black bg-clip-text text-transparent'>Meet Our Teacher</h1>
           </div>
-          <div className='mt-5 mx-5'>
-            <p className='bg-textc bg-clip-text text-transparent text-center font-normal font-title'>There are many variations of passages of the ipsum available, but the majority have suffered alteration in some form,
-           <br /> by injected humor.</p>
+          <div className='mt-5 px-16'>
+            <p className=' text-md bg-textc bg-clip-text text-transparent text-center font-normal font-title'>Our expert instructors at AI Scientist are passionate about making AI fun and accessible for kids. With backgrounds in computer science and education, they simplify complex concepts through hands-on, engaging lessons. Join us to inspire your child's journey into the exciting world of AI.</p>
           </div>
       </div>
       

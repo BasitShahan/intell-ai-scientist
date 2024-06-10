@@ -1,16 +1,19 @@
-import YearlyPlan from  '@/components/YearlyPlan'
+import YearlyPlan from "@/components/YearlyPlan";
 export default function page() {
   return (
     <>
-      <div className=" px-10 py-10 w-full h-auto">
-          <div className=" w-full flex-wrap flex gap-y-7 justify-center items-center">
-            {/* monthly plan */}
-           <YearlyPlan/>
-           <YearlyPlan/>
-           <YearlyPlan/>
-      
-           </div>
+      <div className="p-14 gap-6 lg:grid lg:grid-cols-3 md:grid-cols-2 grid grid-cols-1 ">
+        <div className="">
+          <YearlyPlan />
         </div>
-      </>
-  )
+        <div className="">
+          <YearlyPlan />
+        </div>
+        <div className="md:relative md:left-[50%] lg:left-0    md:mt-4  lg:mt-0">
+          <YearlyPlan />
+        </div>
+      </div>
+
+    </>
+  );
 }
