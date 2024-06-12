@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MonthlyPlan from "./MonthlyPlan";
 import YearlyPlan from "./YearlyPlan";
+import { IoMdCheckmark } from "react-icons/io";
 import PrePrimaryCommunity from "./PrePrimaryCommunity";
 
 export default function Purchase() {
@@ -38,10 +39,10 @@ export default function Purchase() {
         </div>
 
         {/* purchase cards plan code */}
-        <div className="gap-4  p-12 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1">
+        <div className="gap-4 p-5  md:p-12 lg:grid lg:grid-cols-3 md:grid-cols-2 grid grid-cols-1">
           {/* monthly plan starts */}
 
-          <div className=" shadow-custom w-full h-auto rounded-lg border-2 border-bordercolor ">
+          {/* <div className=" shadow-custom w-full h-auto rounded-lg border-2 border-bordercolor ">
             <div>
               <Image
                 className=" mt-10 mx-auto"
@@ -95,69 +96,151 @@ export default function Purchase() {
                 Join Course Plan
               </button>
             </div>
-          </div>
+          </div> */}
+         <div className="shadow-custom px-2 md:px-4 w-full h-auto rounded-lg border-2 border-bordercolor">
+  <div>
+    <Image
+      className="mt-10 mx-auto"
+      src="/images/counter-04-2.webp.png"
+      alt="images"
+      width="100"
+      height="100"
+    />
+  </div>
+  <div>
+    <h1 className="font-title text-lg mt-6 text-center font-extrabold">
+      Beginner Level
+    </h1>
+  </div>
+  <div>
+    <h1 className="px-4 font-semibold py-2 text-lg font-title text-center bg-textc bg-clip-text text-transparent">
+      Ai Explorer
+    </h1>
+  </div>
+  <div>
+    <h1 className="my-10 font-title text-headcolor text-center font-semibold text-3xl">
+      9k
+      <span className="font-title font-medium text-2xl">/Month</span>
+    </h1>
+  </div>
+  <div>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent text-center">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Duration: 8 Weeks
+    </h1>
+  </div>
+  <div className="mt-3">
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent text-center">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Session: 16 (Twice a week)
+    </h1>
+  </div>
+  <div className="mt-3">
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent text-center">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Age Group: 9-12 years
+    </h1>
+  </div>
+  <div className="mt-3 h-[350px] flex flex-col gap-3">
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Introduction to AI concepts
+    </h1>
+    <div className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> <p className=" w-auto">
+        Fun and interactive learning modules
+        </p>
+    </div>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Basic coding exercises
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text  text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> AI-based games and projects
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Certificate of completion
+    </h1>
+  </div>
+  <div className="w-fit mx-auto">
+    <button className="my-10 block px-8 border-textc border-2 rounded-3xl h-12 xs:w-full sm:w-full font-title text-center bg-textc bg-clip-text text-transparent">
+      Join Course Plan
+    </button>
+  </div>
+</div>
+
+
+          
           {/* monthly plan ends here */}
 
-          <div className="shadow-lg w-full  bg-white rounded-lg h-auto border-2 border-bordercolor  ">
-            <div>
-              <Image
-                className="mt-10 mx-auto"
-                src="/images/pricing-icon-02.webp.png"
-                alt="images"
-                width="100"
-                height="100"
-              />
-            </div>
-            <div>
-              <h1 className=" font-title text-lg text-center font-extrabold">
-                Intermediate Level
-              </h1>
-            </div>
-            <div>
-              <h1 className=" px-4 py-2 text-lg font-title text-center bg-textc bg-clip-text text-transparent">
-                Ai Innovater
-              </h1>
-            </div>
-            <div>
-              <h1 className="text-3xl  my-10 font-semibold font-title text-headcolor text-center sm:text-3xl">
-                12k
-                <span className="font-title font-medium text-2xl">/Month</span>
-              </h1>
-            </div>
-            <div>
-              <h1 className=" font-title text-center bg-textc bg-clip-text text-transparent">
-                <span className="font-bold ">Duration:</span> 10 Weeks
-              </h1>
-            </div>
-            <div className="mt-3">
-              <h1 className=" font-title text-center bg-textc bg-clip-text text-transparent">
-                <span className="font-bold ">Session:</span> 20(Twice a week)
-              </h1>
-            </div>
-            <div className="mt-3">
-              <h1 className=" font-title text-center bg-textc bg-clip-text text-transparent">
-                <span className="font-bold ">Age Group:</span> 10-14 years
-              </h1>
-            </div>
-            <div className="mt-3 px-3  h-[150px]">
-              <h1 className="font-title text-center bg-textc bg-clip-text text-transparent">
-                <span className="font-bold ">Features:</span>
-                In-depth AI principles and applications Intermediate coding and
-                programming Hands-on AI projects Introduction to machine
-                learning Personalized feedback and mentoring Certificate of
-                completion
-              </h1>
-            </div>
-            <div className=" w-fit mx-auto">
-              <button className="my-10  px-5 block mx-auto  border-textc border-2 rounded-3xl  h-12 font-title text-center  bg-gradient-to-r from-green-600 to-teal-400 text-white">
-                Join Course Plan
-              </button>
-            </div>
-          </div>
+          <div className="shadow-lg w-full px-2 md:px-4 bg-white rounded-lg h-auto border-2 border-bordercolor">
+  <div>
+    <Image
+      className="mt-10 mx-auto"
+      src="/images/pricing-icon-02.webp.png"
+      alt="images"
+      width="100"
+      height="100"
+    />
+  </div>
+  <div>
+    <h1 className="font-title text-lg mt-6 text-center font-extrabold">
+      Intermediate Level
+    </h1>
+  </div>
+  <div>
+    <h1 className="px-4 py-2 text-lg font-title text-center bg-textc bg-clip-text text-transparent">
+      Ai Innovater
+    </h1>
+  </div>
+  <div>
+    <h1 className="text-3xl my-10 font-semibold font-title text-headcolor text-center sm:text-3xl">
+      12k
+      <span className="font-title font-medium text-2xl">/Month</span>
+    </h1>
+  </div>
+  <div>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> <span>Duration:</span> 10 Weeks
+    </h1>
+  </div>
+  <div className="mt-3">
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> <span>Session:</span> 20 (Twice a week)
+    </h1>
+  </div>
+  <div className="mt-3">
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> <span>Age Group:</span> 10-14 years
+    </h1>
+  </div>
+  <div className="mt-3 flex flex-col gap-3 h-auto md:h-[350px]">
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> In-depth AI principles and applications
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Intermediate coding and programming
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Hands-on AI projects
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Introduction to machine learning
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Personalized feedback and mentoring
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Certificate of completion
+    </h1>
+  </div>
+  <div className="w-fit mx-auto">
+    <button className="my-10 px-5 block mx-auto border-textc border-2 rounded-3xl h-12 font-title text-center bg-gradient-to-r from-green-600 to-teal-400 text-white">
+      Join Course Plan
+    </button>
+  </div>
+</div>
+
+
 
           {/* yearly plan ends here */}
 
-          <div className=" md:relative md:left-[50%] lg:left-0  lg:mx-0 md:mt-4  lg:mt-0 shadow-lg  w-full  rounded-lg h-auto border-2 border-bordercolor">
+          {/* <div className=" md:relative md:left-[50%] lg:left-0  lg:mx-0 md:mt-4  lg:mt-0 shadow-lg  w-full  rounded-lg h-auto border-2 border-bordercolor">
             <div className="">
               <Image
                 className=" mt-10 mx-auto"
@@ -212,7 +295,80 @@ export default function Purchase() {
                 Join Course Plan
               </button>
             </div>
-          </div>
+          </div> */}
+         
+         <div className=" md:relative px-2 md:px-4 md:left-[50%] lg:left-0  lg:mx-0 md:mt-4  lg:mt-0 shadow-lg  w-full  rounded-lg h-auto border-2 border-bordercolor">
+
+  <div>
+    <Image
+      className="mt-10 mx-auto"
+      src="/images/pricing-icon-03.webp.png"
+      alt="images"
+      width="100"
+      height="100"
+    />
+  </div>
+  <div>
+    <h1 className="font-title text-lg mt-6 text-center font-extrabold">
+      Advanced Level
+    </h1>
+  </div>
+  <div>
+    <h1 className="px-4 py-2 text-lg font-title text-center bg-textc bg-clip-text text-transparent">
+      AI Master
+    </h1>
+  </div>
+  <div>
+    <h1 className="text-3xl sm:text-3xl font-semibold my-10 font-title text-headcolor text-center">
+      15k
+      <span className="font-title font-medium text-2xl">/Month</span>
+    </h1>
+  </div>
+  <div>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent text-center">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> <span>Duration:</span> 10 Weeks
+    </h1>
+  </div>
+  <div className="mt-3">
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent text-center">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> <span>Session:</span> 24 (Twice a week)
+    </h1>
+  </div>
+  <div className="mt-3">
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent text-center">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> <span>Age Group:</span> 12-16 years
+    </h1>
+  </div>
+  <div className="mt-3 flex flex-col gap-3 h-auto md:h-[350px]">
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Advanced AI and machine learning concepts
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Complex coding projects
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Real-world AI applications
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Collaboration on group projects
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Access to AI tools and software
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Ongoing support and resources
+    </h1>
+    <h1 className="font-title bg-textc flex gap-2 bg-clip-text text-transparent">
+      <IoMdCheckmark className="text-bordercolor min-w-6 h-6 font-bold" /> Certificate of mastery
+    </h1>
+  </div>
+  <div className="w-fit mx-auto">
+    <button className="my-10 px-5 mt-10 block border-textc border-2 rounded-3xl h-12 xs:w-full sm:w-full font-title text-center bg-gradient-to-r from-green-600 to-teal-400 text-white">
+      Join Course Plan
+    </button>
+  </div>
+</div>
+
 
           {/* preprimary commuunity ends here */}
         </div>
